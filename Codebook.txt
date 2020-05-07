@@ -1,0 +1,87 @@
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals time domain acceleration signal-XYZ direction and time domain gravity signal-XYZ directions. These time domain signals were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (time domain body acceleration signal-XYZ directions and time domain gravity acceleration signal-XYZ directions) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (time domain body acceleration jerk signal-XYZ direction and time domain body gyroscope signal-XYZ direction). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (time domain body acceleration signal magnitude, time domain gravity acceleration signal magnitude, time domain body acceleration jerk signal magnitude, time domain gravity acceleration signal magnitude, time domain body gyroscope  jerk signal magnitude). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing frequency domain body acceleration signal-XYZ direction, frequency domain body acceleration  jerk signal-XYZ direction, frequency domain body gyroscope signal-XYZ direction, frequency domain body acceleration jerk signal magnitude, frequency domain body gyroscope signal magnitude, frequency domain body gyroscope  jerk signal magnitude.
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ direction' is used to denote 3-axial signals in the X, Y and Z directions.
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+subject refers to the number of the test subject relating to the entry - an integer from 1 to 30
+activty refers to the type of activity that the subject was undertaking - WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
+The full list of variables is:
+
+ [1] "time domain body acceleration signal-mean()-X direction"             
+ [2] "time domain body acceleration signal-mean()-Y direction"             
+ [3] "time domain body acceleration signal-mean()-Z direction"             
+ [4] "time domain body acceleration signal-std()-X direction"              
+ [5] "time domain body acceleration signal-std()-Y direction"              
+ [6] "time domain body acceleration signal-std()-Z direction"              
+ [7] "time domain gravity acceleration signal-mean()-X direction"          
+ [8] "time domain gravity acceleration signal-mean()-Y direction"          
+ [9] "time domain gravity acceleration signal-mean()-Z direction"          
+[10] "time domain gravity acceleration signal-std()-X direction"           
+[11] "time domain gravity acceleration signal-std()-Y direction"           
+[12] "time domain gravity acceleration signal-std()-Z direction"           
+[13] "time domain body acceleration  jerk signal-mean()-X direction"       
+[14] "time domain body acceleration  jerk signal-mean()-Y direction"       
+[15] "time domain body acceleration  jerk signal-mean()-Z direction"       
+[16] "time domain body acceleration  jerk signal-std()-X direction"        
+[17] "time domain body acceleration  jerk signal-std()-Y direction"        
+[18] "time domain body acceleration  jerk signal-std()-Z direction"        
+[19] "time domain body gyroscope signal-mean()-X direction"                
+[20] "time domain body gyroscope signal-mean()-Y direction"                
+[21] "time domain body gyroscope signal-mean()-Z direction"                
+[22] "time domain body gyroscope signal-std()-X direction"                 
+[23] "time domain body gyroscope signal-std()-Y direction"                 
+[24] "time domain body gyroscope signal-std()-Z direction"                 
+[25] "time domain body gyroscope  jerk signal-mean()-X direction"          
+[26] "time domain body gyroscope  jerk signal-mean()-Y direction"          
+[27] "time domain body gyroscope  jerk signal-mean()-Z direction"          
+[28] "time domain body gyroscope  jerk signal-std()-X direction"           
+[29] "time domain body gyroscope  jerk signal-std()-Y direction"           
+[30] "time domain body gyroscope  jerk signal-std()-Z direction"           
+[31] "time domain body acceleration signal magnitude-mean()"               
+[32] "time domain body acceleration signal magnitude-std()"                
+[33] "time domain gravity acceleration signal magnitude-mean()"            
+[34] "time domain gravity acceleration signal magnitude-std()"             
+[35] "time domain body acceleration  jerk signal magnitude-mean()"         
+[36] "time domain body acceleration  jerk signal magnitude-std()"          
+[37] "time domain body gyroscope signal magnitude-mean()"                  
+[38] "time domain body gyroscope signal magnitude-std()"                   
+[39] "time domain body gyroscope  jerk signal magnitude-mean()"            
+[40] "time domain body gyroscope  jerk signal magnitude-std()"             
+[41] "frequency domain body acceleration signal-mean()-X direction"        
+[42] "frequency domain body acceleration signal-mean()-Y direction"        
+[43] "frequency domain body acceleration signal-mean()-Z direction"        
+[44] "frequency domain body acceleration signal-std()-X direction"         
+[45] "frequency domain body acceleration signal-std()-Y direction"         
+[46] "frequency domain body acceleration signal-std()-Z direction"         
+[47] "frequency domain body acceleration  jerk signal-mean()-X direction"  
+[48] "frequency domain body acceleration  jerk signal-mean()-Y direction"  
+[49] "frequency domain body acceleration  jerk signal-mean()-Z direction"  
+[50] "frequency domain body acceleration  jerk signal-std()-X direction"   
+[51] "frequency domain body acceleration  jerk signal-std()-Y direction"   
+[52] "frequency domain body acceleration  jerk signal-std()-Z direction"   
+[53] "frequency domain body gyroscope signal-mean()-X direction"           
+[54] "frequency domain body gyroscope signal-mean()-Y direction"           
+[55] "frequency domain body gyroscope signal-mean()-Z direction"           
+[56] "frequency domain body gyroscope signal-std()-X direction"            
+[57] "frequency domain body gyroscope signal-std()-Y direction"            
+[58] "frequency domain body gyroscope signal-std()-Z direction"            
+[59] "frequency domain body acceleration signal magnitude-mean()"          
+[60] "frequency domain body acceleration signal magnitude-std()"           
+[61] "frequency domain body acceleration  jerk signal magnitude-mean()"
+[62] "frequency domain body acceleration  jerk signal magnitude-std()" 
+[63] "frequency domain body gyroscope signal magnitude-mean()"         
+[64] "frequency domain body gyroscope signal magnitude-std()"          
+[65] "frequency domain body gyroscope  jerk signal magnitude-mean()"   
+[66] "frequency domain body gyroscope  jerk signal magnitude-std()"    
+[67] "subject"                                                             
+[68] "activity"
